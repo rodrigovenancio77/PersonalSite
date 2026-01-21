@@ -1,0 +1,48 @@
+.profile-card {
+  display: flex;             
+  align-items: center;       
+  gap: 25px;                 
+  justify-content: space-between;
+  padding: 15px 50px;
+  background-color: #0f0f0f;
+  border: 2px solid #bcbcbc;
+  border-radius: 16px;      
+  margin-bottom: 20px;    
+  box-sizing: border-box;   
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;        
+  object-fit: cover;        
+}
+
+.profile-name {
+  font-weight: bold;
+  font-size: 1.9rem;
+  color: #dadada;
+}
+
+.profile-description {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #dadada;
+}
+
+.divider {
+  font-size: 1.7rem;
+  color: white;
+  font-weight: lighter;
+}
+
+.icon-link {
+  color: #dadada;
+  font-size: 1.5rem;         
+  display: flex;             
+  transition: color 0.2s;
+}
+
+.icon-link:hover {
+  color: #fa9a9a;              
+}

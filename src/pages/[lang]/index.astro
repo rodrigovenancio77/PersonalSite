@@ -1,0 +1,229 @@
+---
+export const getStaticPaths = () => {
+  return [
+    { params: { lang: "en" } },
+    { params: { lang: "es" } },
+    { params: { lang: "pt" } },
+  ];
+};
+
+import Layout from "@/src/layouts/Layout.astro";
+import { useI18n } from "@ariaskit/astro-i18n";
+import { type LocaleSchema } from "@/src/types";
+import Header from "@/src/components/Header.astro";
+import Hero from "@/src/components/Hero.astro";
+import Projects from "@/src/components/Projects.astro";
+import Experience from "@/src/components/Experience.astro";
+import Footer from "@/src/components/Footer.astro";
+import Skills from "@/src/components/Skills.astro";
+
+const { t, locale } = useI18n<LocaleSchema>({
+  ssg: {
+    astro: Astro,
+  },
+});
+
+const nav = [
+  { path: `/`, text: t("nav.about") },
+  { path: `#${t("nav.experience")}`, text: t("nav.experience") },
+  { path: `#${t("nav.projects")}`, text: t("nav.projects") },
+  { path: `#${t("nav.contact")}`, text: t("nav.contact") },
+];
+
+const heroProps = {
+  name: "Rodrigo Venâncio",
+  title: { key: "hero.title", value: t("hero.title") },
+  p1: { key: "hero.p1", value: t("hero.p1") },
+  p2: { key: "hero.p2", value: t("hero.p2") },
+  p3: { key: "hero.p3", value: t("hero.p3") },
+};
+
+const projects = [
+  {
+    nameKey: "projects.item_1.name",
+    descriptionKey: "projects.item_1.description",
+    name: t("projects.item_1.name"),
+    description: t("projects.item_1.description"),
+    link: t("projects.item_1.link"),
+  },
+  {
+    nameKey: "projects.item_2.name",
+    descriptionKey: "projects.item_2.description",
+    name: t("projects.item_2.name"),
+    description: t("projects.item_2.description"),
+    link: t("projects.item_2.link"),
+  },
+  {
+    nameKey: "projects.item_3.name",
+    descriptionKey: "projects.item_3.description",
+    name: t("projects.item_3.name"),
+    description: t("projects.item_3.description"),
+    link: t("projects.item_3.link"),
+  },
+  {
+    nameKey: "projects.item_4.name",
+    descriptionKey: "projects.item_4.description",
+    name: t("projects.item_4.name"),
+    description: t("projects.item_4.description"),
+    link: t("projects.item_4.link"),
+  },
+  {
+    nameKey: "projects.item_5.name",
+    descriptionKey: "projects.item_5.description",
+    name: t("projects.item_5.name"),
+    description: t("projects.item_5.description"),
+    link: t("projects.item_5.link"),
+  }
+];
+
+const projectsProps = {
+  title: { key: "projects.title", value: t("projects.title") },
+  projects,
+};
+
+const experienceData = {
+  title: {
+    key: "experience.title",
+    value: t("experience.title"),
+  },
+  jobs: [
+    {
+      period: {
+        key: "experience.item_1.period",
+        value: t("experience.item_1.period"),
+      },
+      role: {
+        key: "experience.item_1.role",
+        value: t("experience.item_1.role"),
+      },
+      company: {
+        key: "experience.item_1.company",
+        value: t("experience.item_1.company"),
+      },
+      description: {
+        key: "experience.item_1.description",
+        value: t("experience.item_1.description"),
+      },
+    },
+    {
+      period: {
+        key: "experience.item_2.period",
+        value: t("experience.item_2.period"),
+      },
+      role: {
+        key: "experience.item_2.role",
+        value: t("experience.item_2.role"),
+      },
+      company: {
+        key: "experience.item_2.company",
+        value: t("experience.item_2.company"),
+      },
+      description: {
+        key: "experience.item_2.description",
+        value: t("experience.item_2.description"),
+      },
+    }
+  ],
+};
+
+const alternate = [
+  { href: "/en", hreflang: "en" },
+  { href: "/pt", hreflang: "pt" },
+];
+
+const footerContent = {
+  id: t("nav.contact").toLowerCase(),
+  status: {
+    key: "contact.status",
+    value: t("contact.status"),
+  },
+  email_label: {
+    key: "contact.email_label",
+    value: t("contact.email_label"),
+  },
+  email_url: {
+    key: "contact.email_url",
+    value: t("contact.email_url"),
+  },
+  github_label: {
+    key: "contact.github_label",
+    value: t("contact.github_label"),
+  },
+  github_url: {
+    key: "contact.github_url",
+    value: t("contact.github_url"),
+  },
+  linkedin_label: {
+    key: "contact.linkedin_label",
+    value: t("contact.linkedin_label"),
+  },
+  linkedin_url: {
+    key: "contact.linkedin_url",
+    value: t("contact.linkedin_url"),
+  },
+};
+
+const skills = [
+  {
+    title: { key: "skills.linux.title", value: t("skills.linux.title") },
+    category: { key: "skills.linux.category", value: t("skills.linux.category") },
+    description: { key: "skills.linux.description", value: t("skills.linux.description") },
+    experience_years: { key: "skills.linux.experience_years", value: t("skills.linux.experience_years") },
+    experience_label: { key: "skills.linux.experience_label", value: t("skills.linux.experience_label") },
+  },
+  {
+    title: { key: "skills.frontend.title", value: t("skills.frontend.title") },
+    category: { key: "skills.frontend.category", value: t("skills.frontend.category") },
+    description: { key: "skills.frontend.description", value: t("skills.frontend.description") },
+    experience_years: { key: "skills.frontend.experience_years", value: t("skills.frontend.experience_years") },
+    experience_label: { key: "skills.frontend.experience_label", value: t("skills.frontend.experience_label") },
+  },
+  {
+    title: { key: "skills.backend.title", value: t("skills.backend.title") },
+    category: { key: "skills.backend.category", value: t("skills.backend.category") },
+    description: { key: "skills.backend.description", value: t("skills.backend.description") },
+    experience_years: { key: "skills.backend.experience_years", value: t("skills.backend.experience_years") },
+    experience_label: { key: "skills.backend.experience_label", value: t("skills.backend.experience_label") },
+  },
+  {
+    title: { key: "skills.database.title", value: t("skills.database.title") },
+    category: { key: "skills.database.category", value: t("skills.database.category") },
+    description: { key: "skills.database.description", value: t("skills.database.description") },
+    experience_years: { key: "skills.database.experience_years", value: t("skills.database.experience_years") },
+    experience_label: { key: "skills.database.experience_label", value: t("skills.database.experience_label") },
+  },
+  {
+    title: { key: "skills.nodejs.title", value: t("skills.nodejs.title") },
+    category: { key: "skills.nodejs.category", value: t("skills.nodejs.category") },
+    description: { key: "skills.nodejs.description", value: t("skills.nodejs.description") },
+    experience_years: { key: "skills.nodejs.experience_years", value: t("skills.nodejs.experience_years") },
+    experience_label: { key: "skills.nodejs.experience_label", value: t("skills.nodejs.experience_label") },
+  },
+  {
+    title: { key: "skills.kali_linux.title", value: t("skills.kali_linux.title") },
+    category: { key: "skills.kali_linux.category", value: t("skills.kali_linux.category") },
+    description: { key: "skills.kali_linux.description", value: t("skills.kali_linux.description") },
+    experience_years: { key: "skills.kali_linux.experience_years", value: t("skills.kali_linux.experience_years") },
+    experience_label: { key: "skills.kali_linux.experience_label", value: t("skills.kali_linux.experience_label") },
+  }
+];
+
+---
+
+<Layout
+  locale={locale}
+  title="Void"
+  description={t("description")}
+  alternateLinks={alternate}
+>
+  <Header nav={nav} locales={["en", "pt"]} currentLocale={locale} />
+
+  <main>
+    <Hero {...heroProps} />
+    <Projects {...projectsProps} />
+    <Experience {...experienceData} />
+    <Skills heading={{key: "skills.heading", value: t("skills.heading")}} content={skills} />
+  </main>
+
+  <Footer {...footerContent} />
+</Layout>

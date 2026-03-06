@@ -1,0 +1,112 @@
+{
+  "description": "Estudante de Mestrado em Engenharia Informática focado no back-end e em arquiteturas escaláveis. Atualmente a desenvolver diferentes projetos pessoaist e a acabar o curso",
+  "nav": {
+    "about": "sobre",
+    "projects": "projetos",
+    "experience": "experiência",
+    "contact": "contato"
+  },
+  "hero": {
+    "title": "Estudante de Mestrado em Engenharia Informática",
+    "p1": "focado no back-end e em arquiteturas escaláveis. Atualmente a desenvolver diferentes projetos pessoaist e a acabar o curso",
+    "p2": "Com experiência um pouco de experiência profissional, foco-me em clean code, performance e UX intuitiva.",
+    "p3": "Soft Skills: Aprendizagem rápida, comunicação e foco na resolução de problemas."
+  },
+  "projects": {
+    "title": "Projetos",
+    "item_1": {
+      "name": "event-summit",
+      "description": "Projeto para gestão de eventos, com funcionalidades de inscrição, gestão de participantes e exportação de dados. .NET, Sql Server, Html, Css, JavaScript",
+      "link": "https://github.com/rodrigovenancio77/website-utadsummit"
+    },
+    "item_2": {
+      "name": "NEEI-UTAD",
+      "description": "Colaborador do website do Núcleo de Estudantes de Engenharia Informática da UTAD, contribuindo para a manutenção e desenvolvimento de novas funcionalidades. Html, Css, JavaScript",
+      "link": "https://www.neei-utad.pt/index.html"
+    },
+    "item_3": {
+      "name": "Assistente24",
+      "description": "Aplicação móvel para gestão de medicação para pessoas com necessidades especiais, com funcionalidades de lembretes, registo de medicação. Flutter, dart",
+      "link": "https://github.com/bpds2004/IPC_PL3"
+    },
+    "item_4": {
+      "name": "DonkeyKong3D",
+      "description": "Jogo 3D inspirado no clássico Donkey Kong, desenvolvido em javascript.",
+      "link": "https://github.com/rfreitas3005/DonkeyKong3D"
+    },
+    "item_5": {
+      "name": "campos",
+      "description": "Aplicação web para a gestão, reserva e visualização de campos desportivos, com funcionalidades de pesquisa, reserva, gestão de utilizadores, notificações, dashboard de estatísticas. .NET, Sql Server, Html, Css, JavaScript",
+      "link": "https://github.com/bpds2004/bolsa"
+    }
+  },
+  "skills": {
+    "heading": "Habilidades",
+    "linux": {
+      "title": "Linux",
+      "category": "SO",
+      "description": "Sistema Operativo Principal",
+      "experience_years": "-",
+      "experience_label": "Arch Linux"
+    },
+    "frontend": {
+      "title": "Frontend",
+      "category": "Desenvolvimento",
+      "description": "HTML, CSS, JavaScript, TypeScript",
+      "experience_years": "",
+      "experience_label": ""
+    },
+    "backend": {
+      "title": "Backend",
+      "category": "Desenvolvimento",
+      "description": "C#, .NET, Node.js, Java, Python",
+      "experience_years": "",
+      "experience_label": ""
+    },
+    "database": {
+      "title": "Base de Dados",
+      "category": "Framework",
+      "description": "SQL Server, MySQL, Firebase, JSON",
+      "experience_years": "",
+      "experience_label": ""
+    },
+    "nodejs": {
+      "title": "Node.js",
+      "category": "Backend",
+      "description": "REST APIs, Express, Authentication",
+      "experience_years": "",
+      "experience_label": ""
+    },
+    "kali_linux": {
+      "title": "Kali Linux",
+      "category": "Segurança",
+      "description": "Pentesting, SQL Injection, Network Auditing",
+      "experience_years": "",
+      "experience_label": ""
+    }
+  },
+  "experience": {
+    "title": "Experiência",
+    "item_1": {
+      "period": "set 2021 — jun 2022",
+      "role": "Estagiário",
+      "company": "cooptec",
+      "description": "Desenvolvimento e costumização de diferentes websites com Wordpress. Criação de uma Cloud privada com Nextcloud e Raspberry Pi. Criação de uma aplicação móvel para Android e Ios usando Webview. Atendimento ao cliente. Manutenção de diferentes dispositivos."
+    },
+    "item_2": {
+      "period": "set 2020 — jun 2021",
+      "role": "Estagiário",
+      "company": "Enjoy Evolution, LDA",
+      "description": "Manutenção de computadores."
+    }
+  },
+  "contact": {
+    "status": "Disponível para freelance/trabalho",
+    "email_label": "Email",
+    "email_url": "mailto:tu@email.com",
+    "github_label": "GitHub",
+    "github_url": "https://github.com/tu-usuario",
+    "linkedin_label": "Linkedin",
+    "linkedin_url": "https://www.linkedin.com/in/rodrigovenancio77/"
+  }
+}

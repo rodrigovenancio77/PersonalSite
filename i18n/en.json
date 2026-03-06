@@ -1,0 +1,112 @@
+{
+  "description": "Master's student in Computer Science focused on back-end development and scalable architectures. Currently developing various personal projects and finishing my degree.",
+  "nav": {
+    "about": "about",
+    "projects": "projects",
+    "experience": "experience",
+    "contact": "contact"
+  },
+  "hero": {
+    "title": "MSc Computer Science Student ", 
+    "p1": "focused on back-end development and scalable architectures. Currently developing various personal projects and finishing my degree.",
+    "p2": "With professional experience in the field, I prioritize clean code, performance, and intuitive UX.",
+    "p3": "Soft Skills: Fast learner, communication, and a focus on problem-solving."
+  },
+  "projects": {
+    "title": "Projects",
+    "item_1": {
+      "name": "event-summit",
+      "description": "Event management project featuring registration, participant management, and data export functionalities. .NET, SQL Server, HTML, CSS, JavaScript.",
+      "link": "https://github.com/rodrigovenancio77/website-utadsummit"
+    },
+    "item_2": {
+      "name": "NEEI-UTAD",
+      "description": "Contributor to the UTAD Computer Engineering Student Association website, helping to maintain the site and develop new features. HTML, CSS, JavaScript.",
+      "link": "https://www.neei-utad.pt/index.html"
+    },
+    "item_3": {
+      "name": "Assistente24",
+      "description": "Mobile application for managing medication for people with special needs, featuring reminders and medication tracking. Flutter, dart",
+      "link": "https://github.com/bpds2004/IPC_PL3"
+    },
+    "item_4": {
+      "name": "DonkeyKong3D",
+      "description": "3D game inspired by the classic Donkey Kong, developed in JavaScript.",
+      "link": "https://github.com/rfreitas3005/DonkeyKong3D"
+    },
+    "item_5": {
+      "name": "campos",
+      "description": "Web application for managing, reserving, and viewing sports fields, with search, reservation, user management, notifications, and statistics dashboard. .NET, SQL Server, HTML, CSS, JavaScript",
+      "link": "https://github.com/bpds2004/bolsa"
+    }
+  },
+  "skills": {
+    "heading": "Skills",
+    "linux": {
+      "title": "Linux",
+      "category": "SO",
+      "description": "Main Operating System",
+      "experience_years": "-",
+      "experience_label": "Arch Linux"
+    },
+    "frontend": {
+      "title": "Frontend",
+      "category": "Development",
+      "description": "HTML, CSS, JavaScript, TypeScript",
+      "experience_years": "",
+      "experience_label": ""
+    },
+    "backend": {
+      "title": "Backend",
+      "category": "Development",
+      "description": "C#, .NET, Node.js, Java, Python",
+      "experience_years": "",
+      "experience_label": ""
+    },
+    "database": {
+      "title": "Database",
+      "category": "Framework",
+      "description": "SQL Server, MySQL, Firebase, JSON",
+      "experience_years": "",
+      "experience_label": ""
+    },
+    "nodejs": {
+      "title": "Node.js",
+      "category": "Backend",
+      "description": "REST APIs, Express, Authentication",
+      "experience_years": "",
+      "experience_label": ""
+    },
+    "kali_linux": {
+      "title": "Kali Linux",
+      "category": "Security",
+      "description": "Pentesting, SQL Injection, Network Auditing",
+      "experience_years": "",
+      "experience_label": ""
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "item_1": {
+      "period": "set 2021 — jun 2022",
+      "role": "Intern",
+      "company": "cooptec",
+      "description": "Development and customization of different websites with Wordpress. Creation of a private Cloud with Nextcloud and Raspberry Pi. Creation of a mobile application for Android and Ios using Webview. Customer service. Maintenance of different devices."
+    },
+    "item_2": {
+      "period": "set 2020 — jun 2021",
+      "role": "Intern",
+      "company": "Enjoy Evolution, LDA",
+      "description": "Maintenance of computers."
+    }
+  },
+  "contact": {
+    "status": "Available for freelance",
+    "email_label": "Email",
+    "email_url": "mailto:tu@email.com",
+    "github_label": "GitHub",
+    "github_url": "https://github.com/tu-usuario",
+    "linkedin_label": "Linkedin",
+    "linkedin_url": "https://linkedin.com/in/tu-perfil"
+  }
+}

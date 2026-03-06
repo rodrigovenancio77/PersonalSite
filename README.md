@@ -2,7 +2,6 @@
 
 A clean, minimalist portfolio template built with Astro and TailwindCSS, featuring full internationalization support using `@ariaskit/astro-i18n`.
 
-![Hero](.github/571_1x_shots_so.png)
 
 ## ✨ Features
 
@@ -60,7 +59,6 @@ pnpm preview
 This template uses `@ariaskit/astro-i18n` for seamless multilingual support. The i18n system is configured for:
 
 - **English** (`en`) - Default locale
-- **Spanish** (`es`)
 - **Portuguese** (`pt`)
 
 ### Adding New Languages
@@ -167,5 +165,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - [@ariaskit/astro-i18n Documentation](https://github.com/JorgeRosbel/astro-i18n)
 
 ---
+
 
 **Built with ❤️ using Astro and TailwindCSS**
